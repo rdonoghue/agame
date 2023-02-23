@@ -81,6 +81,11 @@ header li:hover {
   color: var(--color-text-light);
 }
 
+.active {
+  background-color: var(--color-accent);
+  color: var(--color-text-light);
+}
+
 nav a {
   background-color: var(--color-text-light);
   border-radius: 4px;
