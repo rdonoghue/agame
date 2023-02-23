@@ -1,0 +1,21 @@
+content li {
+  grid-template-columns: 400px 300px;
+  width: 700px;
+}
+content img {
+  width: 100%;
+  object-fit: cover;
+  border: 5px solid var(--color-text-light);
+  border-radius: 8px;
+  transition: ease 0.25s;
+  transform-origin: 0 0;
+  box-sizing: border-box;
+}
+content img:hover {
+  transform: scale(2);
+  z-index: 10;
+}
+
+.cardinfo {
+  padding: 0rem 1rem 0.5rem 2rem;
+}

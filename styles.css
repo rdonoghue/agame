@@ -1,0 +1,194 @@
+html {
+  --color-main-dark: rgb(44, 54, 57);
+  --color-main-mid: rgb(63, 78, 79);
+  --color-accent: rgb(237, 182, 137);
+  --color-text-light: rgb(220, 215, 201);
+
+  --font-body: "Nanum Myeongjo", serif;
+  --font-header: "Forum", cursive;
+  --font-label: "Jost", sans-serif;
+
+  background-color: var(--color-main-mid);
+  font-family: var(--font-body);
+  color: var(--color-text-light);
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 10rem auto;
+}
+
+header {
+  height: 3rem;
+  background-color: var(--color-main-dark);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-header);
+  /* color: rgb(162, 123, 92); */
+  color: var(--color-accent);
+}
+
+h1,
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header ul {
+  display: flex;
+  text-decoration: none;
+  /* flex-basis: 1; */
+  gap: 1rem;
+  margin: 0;
+  align-items: center;
+  list-style: none;
+}
+
+header li {
+  background-color: var(--color-text-light);
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  margin: 0.25ch auto;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-main-mid);
+  font-family: var(--font-label);
+  width: 10rem;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--color-main-dark);
+}
+header li:hover {
+  background-color: var(--color-accent);
+  color: var(--color-text-light);
+}
+
+nav a {
+  background-color: var(--color-text-light);
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  margin: 0.25ch auto;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-main-mid);
+  font-family: var(--font-label);
+}
+
+nav a:hover {
+  background-color: var(--color-main-dark);
+  color: var(--color-text-light);
+}
+
+content ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+content li {
+  /* gap: 1rem; */
+  margin: 0 0;
+  border-radius: 8px;
+  transition: ease-in-out 0.5s 0.25s;
+  transform-origin: 0 0;
+  background-color: var(--color-main-dark);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* content li:target {
+  transform: scale(1.2);
+} */
+content h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.75rem;
+  /* padding-bottom: 0.5rem; */
+}
+
+content h3 {
+  text-align: center;
+  font-size: 1 rem;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  text-transform: allcaps;
+}
+content p {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* .smallcard {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: white;
+  border-radius: 6px;
+  transform: rotate(9deg);
+  width: 4rem;
+  justify-content: center;
+  gap: 0.5rem;
+  float: right;
+} */
+
+.smallcard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: white;
+  border-radius: 6px;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+  /* padding: 0 0.5rem; */
+}
+
+.redcard {
+  font-family: var(--font-label);
+  color: red;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.blackcard {
+  font-family: var(--font-label);
+  color: black;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 48rem) {
+  nav {
+    display: none;
+  }
+
+  content {
+    margin: 2rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
