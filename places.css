@@ -14,7 +14,6 @@
 
 content {
   width: 100%;
-  border: 2px solid aqua;
 }
 content li {
   display: flex;

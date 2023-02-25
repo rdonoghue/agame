@@ -63,24 +63,41 @@ function checkRight(boxID) {
 
   // console.log(boxID.id, rectPos.right);
   // console.log(cardContainer.offsetWidth);
-  let overlapRight = cardContainer.offsetWidth - rectPos.right;
+  let pageHeight = pageheight();
+  let pageWidth = window.innerWidth;
+  let overlapBottom = pageHeight - rectPos.bottom;
+  let overlapRight = pageWidth - rectPos.right;
   let overlapLeft = rectPos.left;
 
   let fixBox = document.getElementById(imgID);
-  console.log(imgID, overlapLeft);
 
-  if (overlapRight < 370) {
-    if (overlapLeft < 200) {
-      fixBox.style.transformOrigin = "25% 0";
-    } else {
-      fixBox.style.transformOrigin = "100% 0";
-    }
-  } else {
-    fixBox.style.transformOrigin = "0 0";
+  console.log(imgID + "Right " + overlapRight);
+
+  let xZoom = 0;
+  let yZoom = 0;
+  if (overlapBottom < 100) {
+    yZoom = "100%";
   }
-  let zoomRatio = Math.round(window.innerWidth / 10) / 100;
-  console.log(window.innerWidth);
-  console.log(zoomRatio);
+  if (overlapRight < 500 && overlapLeft < 200) {
+    xZoom = "50%";
+  } else if (overlapRight < 500) {
+    xZoom = "100%";
+  }
+
+  fixBox.style.transformOrigin = xZoom + " " + yZoom;
+}
+
+function pageheight() {
+  let body = document.body;
+  let html = document.documentElement;
+  let height = Math.max(
+    body.scrollHeight,
+    body.offsetHeight,
+    html.clientHeight,
+    html.scrollHeight,
+    html.offsetHeight
+  );
+  return height;
 }
 
 // allHTML =
