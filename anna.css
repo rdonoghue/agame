@@ -1,0 +1,22 @@
+content li {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  width: 400px;
+}
+content img {
+  width: 100%;
+  object-fit: cover;
+  border: 5px solid var(--color-text-light);
+  border-radius: 8px;
+  transition: ease 0.25s;
+  transform-origin: 0 0;
+  box-sizing: border-box;
+}
+content img:hover {
+  transform: scale(2);
+  z-index: 10;
+}
+
+.cardinfo {
+  padding: 0 0.5rem;
+}

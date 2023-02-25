@@ -1,6 +1,6 @@
 "use strict";
 
-import { peopleCards } from "./peopledata.js";
+import { peopleCards } from "./annadata.js";
 var peopleIndex = peopleCards;
 var cardContainer = document.getElementById("cardcontainer");
 var allCards = cardContainer.innerHTML;

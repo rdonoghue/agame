@@ -6,18 +6,18 @@ const peopleCards = {};
 
 peopleCards["anna"] = {
   name: "Anna",
-  url: "./img/blank.png",
+  url: "./img/anna.png",
   tagline: "The Princess",
   blurb:
-    "<div class='smallcard'><p class='blackcard'>6 &#x2660</p><p class='blackcard'>2 &#x2663</p><p class='redcard'>5 &#x2665</p><p class='redcard'>5&#x2666</p></div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat nunc turpis, at euismod mi elementum et. Aenean ac consequat tortor. Suspendisse id pharetra dui, at vestibulum magna.",
+    "<div class='smallcard'><p class='blackcard'>6 &#x2660</p><p class='blackcard'>2 &#x2663</p><p class='redcard'>5 &#x2665</p><p class='redcard'>5&#x2666</p></div><p>Daughter of Eric of Amber, she was sent off the the Lady's Finishing School for her education, but has long since expected to hear from her father.",
 };
 
 peopleCards["aster"] = {
   name: "Aster",
-  url: "./img/blank.png",
-  tagline: "The Wanderer",
+  url: "./img/aster.png",
+  tagline: "The Dragonslayer",
   blurb:
-    "<div class='smallcard'><p class='blackcard'>3 &#x2660</p><p class='blackcard'>8 &#x2663</p><p class='redcard'>1 &#x2665</p><p class='redcard'>6&#x2666</p></div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat nunc turpis, at euismod mi elementum et. Aenean ac consequat tortor. Suspendisse id pharetra dui, at vestibulum magna.",
+    "<div class='smallcard'><p class='blackcard'>3 &#x2660</p><p class='blackcard'>8 &#x2663</p><p class='redcard'>1 &#x2665</p><p class='redcard'>6&#x2666</p></div><p>A figure out of legend, he has wandered the undiscovered worlds surrounding the garden for as long as anyone can remember, slaying  feral dragons and other great threats.",
 };
 
 peopleCards["red"] = {
@@ -45,7 +45,7 @@ peopleCards["william"] = {
 };
 
 peopleCards["beatrice"] = {
-  name: "Betrice",
+  name: "Beatrice",
   url: "./img/beatrice.png",
   tagline: "Headmistress of the Lady's Academy",
   blurb:
@@ -96,7 +96,7 @@ peopleCards["asterius"] = {
   url: "./img/asterius.png",
   tagline: "Dragon of Winter Plateau",
   blurb:
-    "Little is known of Asterius, save that Luthedor asked his scale be taken to here with news od what transpired in Chuparosa.",
+    "Little is known of Asterius, save that Luthedor asked his scale be taken to here with news of what transpired in Chuparosa.",
 };
 
 peopleCards["whisperer"] = {

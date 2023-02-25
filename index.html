@@ -12,12 +12,26 @@
     />
 
     <link href="styles.css" rel="stylesheet" />
+    <link href="people.css" rel="stylesheet" />
+
     <title>A Game starter</title>
   </head>
   <body>
-    <header></header>
-    <nav></nav>
-    <main></main>
+    <header>
+      <ul>
+        <li class="active"><a href="index.html">People</a></li>
+        <li><a href="places.html">Places</a></li>
+      </ul>
+    </header>
+    <h1>People</h1>
+    <main>
+      <nav id="sidenav"></nav>
+
+      <content>
+        <ul id="cardcontainer"></ul>
+      </content>
+    </main>
     <footer></footer>
   </body>
+  <script src="people.js" type="module" id="callcards"></script>
 </html>
