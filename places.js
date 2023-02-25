@@ -12,12 +12,10 @@ document.getElementsByTagName("BODY")[0].onresize = function () {
   }
 };
 
-
 setupPlaces();
 onscroll = (event) => {
   boxInfo();
-    checkRight(document.getElementById(k));
-  }
+  checkRight(document.getElementById(k));
 };
 
 function setupPlaces() {
@@ -107,7 +105,6 @@ function checkRight(boxID) {
   } else if (500 > fromLeft && fromLeft >= 250) {
     xZoom = "50%";
   } else if (250 > fromLeft && fromLeft > 125) {
-    console.log("look at me!");
     xZoom = "25%";
   } else {
     xZoom = 0;
