@@ -11,6 +11,11 @@
   margin: 0;
   padding: 0;
 }
+
+content {
+  width: 100%;
+  border: 2px solid aqua;
+}
 content li {
   display: flex;
   flex-direction: column;
@@ -28,4 +33,28 @@ content img {
 content img:hover {
   transform: scale(2);
   z-index: 10;
+}
+
+@media (max-width: 63rem) {
+  content img:hover {
+    transform: scale(1.5);
+  }
+}
+
+@media (max-width: 48rem) {
+  nav {
+    display: none;
+  }
+
+  content {
+    margin: 2rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  content img:hover {
+    transform: scale(1.2);
+  }
 }
