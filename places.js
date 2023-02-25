@@ -12,17 +12,10 @@ document.getElementsByTagName("BODY")[0].onresize = function () {
   }
 };
 
-var myTest = 7;
-if (9 > myTest && myTest > 5) {
-  console.log("worked as expected");
-} else {
-  console.log("oh no");
-}
 
 setupPlaces();
 onscroll = (event) => {
   boxInfo();
-  for (let k in cardIndex) {
     checkRight(document.getElementById(k));
   }
 };
@@ -68,21 +61,21 @@ function setupPlaces() {
   navBox.innerHTML = navList;
 }
 
-function boxInfo() {
-  let boxID = document.getElementById("celestrus");
-  let rectPos = boxID.getBoundingClientRect();
-  let windowHeight = window.innerHeight;
-  let distFromBottom = windowHeight - rectPos.bottom;
-  console.log("from bottom: " + distFromBottom);
-  console.log("from top: " + rectPos.top);
+// function boxInfo() {
+//   let boxID = document.getElementById("celestrus");
+//   let rectPos = boxID.getBoundingClientRect();
+//   let windowHeight = window.innerHeight;
+//   let distFromBottom = windowHeight - rectPos.bottom;
+//   console.log("from bottom: " + distFromBottom);
+//   console.log("from top: " + rectPos.top);
 
-  let windowWidth = window.innerWidth;
-  let fromLeft = rectPos.left;
-  let fromRight = windowWidth - rectPos.right;
-  console.log("from left: " + fromLeft);
-  console.log("from right: " + fromRight);
-  console.log(rectPos);
-}
+//   let windowWidth = window.innerWidth;
+//   let fromLeft = rectPos.left;
+//   let fromRight = windowWidth - rectPos.right;
+//   console.log("from left: " + fromLeft);
+//   console.log("from right: " + fromRight);
+//   console.log(rectPos);
+// }
 
 function checkRight(boxID) {
   // let rectPos = boxID.getBoundingClientRect();
@@ -120,9 +113,9 @@ function checkRight(boxID) {
     xZoom = 0;
   }
 
-  if ((rectID = "celestrus")) {
-    console.log(xZoom + " " + yZoom);
-  }
+  // if ((rectID = "celestrus")) {
+  //   console.log(xZoom + " " + yZoom);
+  // }
 
   fixBox.style.transformOrigin = xZoom + " " + yZoom;
 }
